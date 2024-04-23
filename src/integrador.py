@@ -45,7 +45,8 @@ class FirebirdDBConnector:
             estado = data["pessoa"]["Estado"]
             cidade = data["pessoa"]["cidade"]
             pais = data["pessoa"]["pais"]     
-            sql_command = f"INSERT INTO USUARIO (NOME, CIDADE, ESTADO, PAIS) VALUES(\'{nome}\', \'{estado}\', \'{cidade}\', \'{pais}\')"
+            sistema = "Python"
+            sql_command = f"INSERT INTO USUARIO (NOME, CIDADE, ESTADO, PAIS) VALUES(\'{nome}\', \'{estado}\', \'{cidade}\', \'{pais}\',\'{sistema}'\)"
             cursor = self.connection.cursor()
             cursor.execute(sql_command)
             self.connection.commit()
