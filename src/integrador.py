@@ -54,7 +54,7 @@ class FirebirdDBConnector:
             print("Erro ao inserir dados:", e)
 
 
-# Exemplo de uso
+# Entry Points
 if __name__ == "__main__":
     requester = JSONRequester()
     uri = "https://gist.githubusercontent.com/BoscoBecker/b343b480631ca61b0b06f4dca6b23139/raw/440f560f86627871789eabdc4c86b4e819ddc9b1/data.json"
